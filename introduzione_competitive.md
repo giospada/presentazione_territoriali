@@ -88,8 +88,8 @@ Una panoramica dei tipi di dati fondamentali in C++ e la loro importanza.
 ### Tipi Interi
 
 - `int`: Numero intero, tipicamente di 4 byte.
-- `short int`: Intero corto, meno byte di un `int`.
-- `long int`: Intero lungo, più byte di un `int`.
+- `short int`: Intero corto, due byte di un `int`.
+- `long int`: Intero lungo, il doppio di un `int`.
 
 ### Tipo Carattere
 
@@ -996,6 +996,78 @@ exit(0)
 ```
 
 </div>
+
+
+
+---
+
+# Introduzione
+
+In competitive programming, l'efficienza e la rapidità nello scrivere codice sono cruciali. Utilizzare codice preesistente tramite `import` in Python e `#include` in C++ può aiutarti a concentrarti sulla soluzione del problema.
+
+---
+
+# `#include` in C++
+
+- `#include` consente di includere il contenuto di un file sorgente o di una libreria standard nel punto in cui appare la direttiva.
+- Molto usato per includere librerie standard come `<iostream>` per l'input/output o `<vector>` per utilizzare i vettori.
+
+## Esempio
+
+```cpp
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> v = {1, 2, 3};
+    std::cout << v[0]; // Stampa 1
+}
+```
+
+---
+
+# `import` in Python
+
+- `import` carica un modulo o una libreria, rendendo le sue funzioni e classi disponibili nel tuo script.
+- Fondamentale per accedere a moduli standard come `math` o a moduli di terze parti.
+
+## Esempio
+
+```python
+import math
+
+print(math.sqrt(4)) # Stampa 2.0
+```
+
+---
+
+# Utilizzo in Competitive Programming
+
+## C++
+
+- Utilizzare `#include` per accedere a strutture dati e algoritmi efficaci, come `std::sort` o `std::set`.
+- `#include <bits/stdc++.h>` include quasi tutte le librerie standard (usato comunemente in competitive programming, ma da evitare in produzione).
+
+## Python
+
+- `import` è utile per moduli come `math`, `itertools` o `sys` per leggere velocemente da stdin.
+- Python ha molte librerie per facilitare la manipolazione di dati e calcoli matematici.
+
+---
+
+# Vantaggi
+
+- **Riutilizzo del Codice:** Evita di riscrivere codice comune, concentrandoti sulla logica specifica del problema.
+- **Efficienza:** Sfrutta implementazioni ottimizzate di strutture dati e algoritmi.
+- **Leggibilità:** Il codice è più ordinato e facile da comprendere.
+
+---
+
+# Considerazioni Finali
+
+- Sia `#include` in C++ che `import` in Python sono strumenti potenti per il competitive programming.
+- Imparare quali librerie sono disponibili e come utilizzarle può significativamente migliorare la qualità e l'efficienza delle tue soluzioni.
+
 
 ---
 
